@@ -14,7 +14,6 @@ filetype off     " required
  Plugin 'flazz/vim-colorschemes'
  Plugin 'editorconfig/editorconfig-vim'
  Plugin 'ervandew/supertab' "Auto completes with <tab>
- Plugin 'scrooloose/nerdtree'
  Plugin 'scrooloose/syntastic'
 " " All of your Plugins must be added before the following line
  call vundle#end()         " required
@@ -25,8 +24,6 @@ filetype off     " required
  set autoindent tabstop=4 shiftwidth=4
  set noexpandtab " Tab
  set cursorline " Highlights current line
- set colorcolumn=81 " Ruler
-autocmd vimenter * NERDTree
 " " Sets default register to system clipboard
  set clipboard=unnamedplus " requires vim-gnome or vim-gtk to enable
 " clipboard
