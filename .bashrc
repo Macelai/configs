@@ -9,7 +9,7 @@ shopt -s expand_aliases
 alias ls='ls --color=auto'
 alias cd=cdls
 alias c='clear'
-alias update=up
+alias up=up
 
 alias rm='rm -i'
 alias mv='mv -i'
@@ -22,8 +22,6 @@ function cdls {
 }
 
 function up {
-	cd ~/Documentos
-	"./update.sh"
+	/home/mazza/Documentos/update.sh
 }
-
 export PS1="\[\033[38;5;160m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]:[\[$(tput sgr0)\]\[\033[38;5;160m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]]: \[$(tput sgr0)\]"
