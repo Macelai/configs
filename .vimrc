@@ -22,7 +22,10 @@ filetype off     " required
  set number
  set mouse=a
  set encoding=utf-8
+<<<<<<< HEAD
  set autoindent
+=======
+>>>>>>> 384b3f5328419b832ebf72c4ced18c574d0f7bd9
 "
  syntax on
  set autoindent tabstop=4 shiftwidth=4
