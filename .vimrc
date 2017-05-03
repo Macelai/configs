@@ -19,6 +19,10 @@ filetype off     " required
  call vundle#end()         " required
  filetype plugin indent on " required
 " " Put your non-Plugin stuff after this line
+ set number
+ set mouse=a
+ set encoding=utf-8
+ set autoindent
 "
  syntax on
  set autoindent tabstop=4 shiftwidth=4
@@ -32,9 +36,8 @@ filetype off     " required
 "
  set t_Co=256
  colorscheme molokai
- 
- set laststatus=2 " Show airline
  let g:airline_powerline_fonts = 1
+ set laststatus=2 " Show airline
  let g:airline_theme = 'murmur'
  let g:airline#extensions#tabline#enabled = 1 " Enables airline tabline
  set statusline+=%#warningmsg#
@@ -44,4 +47,5 @@ filetype off     " required
  let g:syntastic_always_populate_loc_list = 1
  let g:syntastic_auto_loc_list = 1
  let g:syntastic_check_on_open = 1
- let g:syntastic_check_on_wq = 0
+ let g:syntastic_check_on_wq = 1
+
