@@ -12,7 +12,6 @@ alias la='ls -a'
 alias lla='ls -la'
 alias cd=cdls
 alias c='clear'
-alias up=up
 
 alias rm='rm -i'
 alias mv='mv -i'
@@ -26,5 +25,9 @@ function cdls {
 
 function up {
 	/home/mazza/Documentos/update.sh
+}
+
+function bitcoin {
+	/home/mazza/Github/foxbit-price/main.py
 }
 export PS1="\[\033[38;5;160m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]:[\[$(tput sgr0)\]\[\033[38;5;160m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]]: \[$(tput sgr0)\]"
