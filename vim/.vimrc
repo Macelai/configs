@@ -15,6 +15,9 @@ filetype off     " required
  Plugin 'editorconfig/editorconfig-vim'
  Plugin 'ervandew/supertab' "Auto completes with <tab>
  Plugin 'scrooloose/syntastic'
+ Plugin 'scrooloose/nerdtree'
+ Plugin 'ryanoasis/vim-devicons'
+
 " " All of your Plugins must be added before the following line
  call vundle#end()         " required
  filetype plugin indent on " required
@@ -35,10 +38,10 @@ filetype off     " required
  imap {<CR> {<CR>}<left><CR><up><Tab>
 "
  set t_Co=256
- colorscheme molokai
+ colorscheme badwolf
  let g:airline_powerline_fonts = 1
  set laststatus=2 " Show airline
- let g:airline_theme = 'murmur'
+ let g:airline_theme = 'badwolf'
  let g:airline#extensions#tabline#enabled = 1 " Enables airline tabline
  set statusline+=%#warningmsg#
  set statusline+=%{SyntasticStatuslineFlag()}
@@ -49,3 +52,5 @@ filetype off     " required
  let g:syntastic_check_on_open = 1
  let g:syntastic_check_on_wq = 1
 
+ map <C-n> :NERDTreeToggle<CR>
+ let g:NERDTreeWinSize=50
